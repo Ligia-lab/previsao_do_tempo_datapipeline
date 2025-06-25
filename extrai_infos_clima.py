@@ -20,7 +20,7 @@ URL = join('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/se
            f'{city}/{data_inicio}/{data_fim}?unitGroup=metric&include=days&key={key}&contentType=csv')
 
 dados = pd.read_csv(URL)
-print(dados.head())
+print(dados.head( ))
 
 #pasta onde os arquivos serão salvos
 file_path = f'/home/ligia/Documents/ALURA/Engenharia/previsao_do_tempo_datapipeline/semana={data_inicio}/'
